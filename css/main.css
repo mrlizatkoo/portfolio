@@ -6,6 +6,7 @@
     --light: #FFF9F5;
     --dark: #3B241F;
     --gray: #8D6E63;
+    /* https://cssgradient.io/ */
     --bg-gradient: linear-gradient(135deg, #A97449 0%, #D2B48C 30%, #FFF9F5 60%, #E9A6A6 100%);
     --font-main: 'Segoe UI', sans-serif, Arial;
 }
@@ -28,16 +29,12 @@ body {
 /* ===== HEADER ===== */
 header {
     background: var(--accent);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     color: white;
     padding: 2.5rem 1rem;
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: -0.5px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* ===== NAVIGACIA ===== */
@@ -57,7 +54,6 @@ nav {
     display: none;
     background: none;
     border: none;
-    cursor: pointer;
     padding: 1.2rem;
     position: absolute;
     right: 0;
@@ -135,7 +131,7 @@ nav {
 
 .nav-menu a.active {
     color: white;
-    background: var(--bg-gradient);
+    background: var(--accent);
     box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
 }
 

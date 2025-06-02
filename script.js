@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-const figures = document.querySelectorAll('.gallery figure img');
+const images = document.querySelectorAll('.gallery figure img');
 const overlay = document.getElementById('imageOverlay');
 const overlayImg = document.getElementById('overlayImg');
 
-figures.forEach(img => {
+images.forEach(img => {
     img.addEventListener('click', () => {
         overlayImg.src = img.src;
         overlay.classList.add('show');
