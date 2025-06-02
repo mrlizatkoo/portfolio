@@ -379,3 +379,34 @@ p {
         transform: translateY(0);
     }
 }
+
+/* sidebar uprava */
+@media (min-width: 1024px) {
+  .page-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+
+  main {
+    flex: 0 0 90%;
+    max-width: 1100px;
+    padding-top: 3rem;
+  }
+
+  .weather-sidebar {
+    flex: 0 0 250px;
+    background: white;
+    margin: 3rem;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 8px 8px 16px #d9d9d9, -8px -8px 16px #ffffff;
+    height: fit-content;
+    position: sticky;
+    top: 10rem;
+  }
+}
