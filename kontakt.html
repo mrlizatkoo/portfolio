@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/kontakt.css">
+</head>
+<body>
+    <header>Kontakt</header>
+    <nav>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="index.html">Úvod</a></li>
+            <li><a href="galeria.html">Obrázková galéria</a></li>
+            <li><a href="info.html">O nás</a></li>
+            <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Kontaktujte nás</h2>
+            <form action="#" method="post" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Meno*</label>
+                    <input type="text" id="name" name="name" required minlength="5" maxlength="128">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required maxlength="256">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Telefónne číslo</label>
+                    <input type="tel" id="phone" name="phone" minlength="7">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Predmet*</label>
+                    <input type="text" id="subject" name="subject" required minlength="3" maxlength="128">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Správa*</label>
+                    <textarea id="message" name="message" rows="5" required minlength="5"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Odoslať</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-heading">Programátorské peklo</h3>
+                <p class="footer-text">Kde všetky <code>!important</code> príkazy nájdu svoj domov.</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-heading">Rýchle linky</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link">Úvod</a></li>
+                    <li><a href="galeria.html" class="footer-link">Galéria</a></li>
+                    <li><a href="info.html" class="footer-link">O nás</a></li>
+                    <li><a href="kontakt.html" class="footer-link">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-heading">Kontaktné informácie</h3>
+                <p class="footer-text">support@programatorskepeklo.sk</p>
+                <p class="footer-text">+421 123 456 789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2025 Programátorské peklo. Všetky práva vyhradené (aj keď kód je otvorený).</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

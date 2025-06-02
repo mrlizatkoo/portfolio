@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrázková galéria</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/galeria.css">
+</head>
+<body>
+    <header>Obrázková galéria</header>
+    <nav>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="index.html">Úvod</a></li>
+            <li><a href="galeria.html"  class="active">Obrázková galéria</a></li>
+            <li><a href="info.html">O nás</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="gallery">
+            <figure><img src="img/silly_boi.jpg" alt="silly boi doing silly things"></figure>
+            <figure><img src="img/tall_boi.jpg" alt="tall boi being tall"></figure>
+            <figure><img src="img/wingardium_marge.jpg" alt="blowing up marge"></figure>
+            <figure><img src="img/thirst_trap.jpg" alt="literally just a thirst trap"></figure>
+            <figure><img src="img/dawg.jpg" alt="big dawg and small boi"></figure>
+            <figure><img src="img/aura.jpg" alt="AURA"></figure>
+        </div>
+    </main>
+
+    <!-- Full image overlay -->
+    <div class="full-image-overlay" id="imageOverlay">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Full image preview" id="overlayImg">
+    </div>
+        <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-heading">Programátorské peklo</h3>
+                <p class="footer-text">Kde všetky <code>!important</code> príkazy nájdu svoj domov.</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-heading">Rýchle linky</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link">Úvod</a></li>
+                    <li><a href="galeria.html" class="footer-link">Galéria</a></li>
+                    <li><a href="info.html" class="footer-link">O nás</a></li>
+                    <li><a href="kontakt.html" class="footer-link">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-heading">Kontaktné informácie</h3>
+                <p class="footer-text">support@programatorskepeklo.sk</p>
+                <p class="footer-text">+421 123 456 789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2025 Programátorské peklo. Všetky práva vyhradené (aj keď kód je otvorený).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
